@@ -31,3 +31,17 @@ ALTER COLUMN [Age] INT
 
 SELECT * FROM [Towns]
 SELECT * FROM [Minions]
+
+
+
+ALTER TABLE [Minions]
+ALTER COLUMN [Age] INT
+
+INSERT INTO [Minions] ([Id], [Name], [Age], [TownId])
+VALUES 
+(1, 'KEVIN', 22, 1),
+(2, 'Bob', 15, 3),
+(3, 'Steward', NULL, 2)
+
+SELECT * FROM [Towns]
+SELECT * FROM [Minions]
