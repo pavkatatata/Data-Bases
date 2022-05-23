@@ -43,5 +43,10 @@ VALUES
 (2, 'Bob', 15, 3),
 (3, 'Steward', NULL, 2)
 
+INSERT INTO [Minions] [Name]
+VLAUES
+('Ivan')
+
+
 SELECT * FROM [Towns]
 SELECT * FROM [Minions]
