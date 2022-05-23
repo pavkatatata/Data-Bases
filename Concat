@@ -32,3 +32,9 @@ WHERE [ManagerID] IS NULL
 SELECT [FirstName], [LastName], [Salary]
 FROM [Employees]
 ORDER BY [Salary] DESC
+
+
+
+SELECT TOP (5) [FirstName], [LastName], [Salary]
+FROM [Employees]
+ORDER BY [Salary] DESC
