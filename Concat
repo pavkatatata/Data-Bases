@@ -5,3 +5,9 @@ SELECT [FirstName] + '.' + [LastName] + '@' + 'softuni.bg'
 AS [FULL Email Address]               // -> colonata da se kazva s tova ime
 FROM [Employees]
 
+
+// BETWEEN 
+
+SELECT [FirstName], [LastName], [JobTitle], [Salary]
+FROM [Employees]
+WHERE [Salary] BETWEEN 20000 AND 30000
