@@ -1,0 +1,7 @@
+SELECT * 
+FROM [Employees]
+
+SELECT [FirstName] + '.' + [LastName] + '@' + 'softuni.bg'
+AS [FULL Email Address]               // -> colonata da se kazva s tova ime
+FROM [Employees]
+
