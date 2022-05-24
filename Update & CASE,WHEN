@@ -1,0 +1,25 @@
+
+
+SELECT * FROM [Departments]
+WHERE [Name] IN ('Engineering', 'Tool Design', 'Marketing', 'Information Services')
+
+UPDATE [Employees]
+SET [Salary] += [Salary] * 0.12
+WHERE [DepartmentID] IN ( 1, 2, 4, 11)
+
+SELECT [Salary] 
+FROM [Employees]
+
+
+
+.....................
+
+SELECT * FROM [Countries]
+
+SELECT [CountryName], [CurrencyCode], [CurrencyCode], 
+         CASE 
+		     WHEN [CurrencyCode] = 'EUR' THEN 'Euro'
+			 ELSE 'Not Euro' 
+			 END AS 'Not Euro'
+FROM [Countries]
+ORDER BY [CountryName] 
