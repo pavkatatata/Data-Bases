@@ -1,0 +1,32 @@
+CREATE TABLE [Passports](
+  [PassportID] INT PRIMARY KEY IDENTITY(100, 1),
+  [PassportNumber] VARCHAR(10) NOT NULL
+  )
+
+
+    -- ONE TO ONE RELATION !!!   .... UNIQUE pi6em ZADULJITELNO! 
+CREATE TABLE [Persons] (
+  [PersonID] INT PRIMARY KEY IDENTITY NOT NULL,
+  [FirstName] NVARCHAR(30) NOT NULL,
+  [Salary]  DECIMAL(8,2) NOT NULL, 
+  [PassportID] INT  FOREIGN KEY REFERENCES [Passports]([PassportID]) UNIQUE NOT NULL
+  )
+
+  INSERT INTO [Passports] ([PassportNumber])
+ VALUES 
+ ('N3434DF4'),
+ ('DFS3LFKG'),
+ ('CLLLFKDF')
+
+ 
+ 
+ INSERT INTO [Persons]([FirstName], [Salary], [PassportID])
+     VALUES
+ ('Roberto', 43300.00, 101),
+ ('Tom', 56100.00, 102),
+ ('Yana', 60200.00, 100)
+
+  SELECT * FROM [Passports]
+  SELECT * FROM [Persons]
+
+------------------------------------------------------------------------------------------------------------------
