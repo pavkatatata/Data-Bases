@@ -1,3 +1,8 @@
+SUMMARY of RELATIONS:
+-One To One => Foreign key is UNIQUE
+-One to Many ( Many to One) => Foreign KEY -> Primary Key
+- Many to Many  => Mapping table, composite Primary KEY, double Foreign KEY 
+
 -- ONE TO ONE 
 
 CREATE TABLE [Passports](
