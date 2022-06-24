@@ -1,0 +1,6 @@
+SELECT TOP (5) e.EmployeeID, e.FirstName, e.Salary, dep.Name
+FROM Employees as e
+LEFT JOIN  Departments AS dep
+ON dep.DepartmentID = e.DepartmentID
+WHERE e.Salary > 15000
+ORDER BY e.DepartmentID
