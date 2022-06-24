@@ -1,0 +1,12 @@
+
+SELECT * FROM Employees
+SELECT * FROM Addresses
+SELECT * FROM Towns
+
+
+
+SELECT TOP (50) e.FirstName, e.LastName,e.AddressID,a.AddressText
+FROM Employees AS e
+LEFT JOIN Addresses AS a	
+ON  e.AddressID = a.AddressID 
+ORDER BY e.FirstName
