@@ -1,0 +1,9 @@
+SELECT TOP (5) e.EmployeeID, e.FirstName,
+                             pr.Name AS ProjectName
+          FROM Employees AS e
+      INNER JOIN EmployeesProjects AS epr
+          ON e.EmployeeID = epr.EmployeeID
+      INNER JOIN Projects AS pr
+          ON epr.ProjectID = pr.ProjectID
+          WHERE pr.StartDate > '08/13/2002' AND pr.EndDate IS NULL
+          ORDER BY e.EmployeeID
