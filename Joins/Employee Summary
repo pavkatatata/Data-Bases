@@ -1,0 +1,9 @@
+SELECT TOP (50)
+e.FirstName + ' ' + e.LastName AS EmployeeName,
+m.FirstName + ' ' + m.LastName AS ManagerName,
+dn.Name AS DepartmentName
+FROM Employees AS e
+INNER JOIN Employees AS m
+ON e.ManagerID = m.EmployeeID 
+INNER JOIN Departments AS dn
+ON e.DepartmentID = dn.DepartmentID
